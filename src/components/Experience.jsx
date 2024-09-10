@@ -29,15 +29,24 @@ const ExperienceCard = ({ experience }) => (
       </p>
     </motion.div>
 
-    <motion.ul initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>
+    <motion.ul 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 0.5, delay: 0.3 }}
+    >
       {experience.points.map((point, index) => (
-        <li key={index} className="text-white-100 text-[14px] pl-1 tracking-wider">
+        <li 
+          key={index} 
+          className="text-white-100 text-[14px] pl-1 tracking-wider" 
+          style={{ marginBottom: '10px' }} // Add space between points
+        >
           {point}
         </li>
       ))}
     </motion.ul>
   </VerticalTimelineElement>
 );
+
 
 const Experience = () => (
   <>

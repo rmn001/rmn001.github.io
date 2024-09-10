@@ -15,14 +15,13 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    netsol,
+    georgiatech,
+    avs,
+    nts,
+    plg,
+    pma,
   } from "../assets";
   
   export const navLinks = [
@@ -116,121 +115,130 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "AI/ML Intern",
+      company_name: "Netsol Technologies",
+      icon: netsol,
+      iconBg: "#FFFFFF",
+      date: "June 2024 - July 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "•	Developed a cutting-edge resume analyzer leveraging Grok, Lang Chain, and Llama that evaluates and ranks resumes based on predefined job criteria such as skills and experience.",
+
+        "•	Conducted rigorous testing on over 1,000 resumes, resulting in the identification of 5 top candidates, with 2 successfully hired.",
+
+        "•	Implemented a ranking algorithm to match resumes to job descriptions, improving candidate filtering by 40%.",
+        
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Undergraduate Computer Vision Researcher",
+      company_name: "Georgia Tech",
+      icon: georgiatech,
+      iconBg: "#FFFFFF",
+      date: "Oct 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "•	Engineered a machine vision model in Python to detect critical features at intersection crossways using supervised learning techniques, achieving a detection accuracy of  60%.",
+        "•	Collaborated on enhancing OpenStreetMap data to implement advanced graphing algorithms, identifying optimal wheelchair-accessible paths within Gwinnett County, Georgia.",
+        "•	Continuously refining algorithms and models, aiming to increase detection accuracy by 25% and reduce pathfinding computation time by 20%.",
+        
       ],
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Autonomous Vehicle Simulation",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a web-based autonomous vehicle simulation using physics-based dynamics and AI algorithms. The platform enables real-time analysis of over 50 vehicle scenarios with an intuitive interface for modifying and analyzing performance.",
       tags: [
         {
-          name: "react",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TensorFlow.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Three.js",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: avs,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Project Management Assistant",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "An AI-powered task management platform enabling real-time collaboration, natural language task creation, and offline functionality. Integrated AI-driven insights, secure authentication, and real-time task updates for enhanced productivity.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "PyTorch",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "NLP libraries",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: pma,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Neighborhood Tool Sharing App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A cross-platform mobile app that allows local communities to lend and borrow tools, featuring location-based listings, scheduling, and real-time notifications for tool requests.",
       tags: [
         {
-          name: "nextjs",
+          name: "Nodejs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "React",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Google API",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: nts,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Dynamic Puzzle Level Generator",
+      description:
+        "An App that generates unique, challenging puzzle levels, dynamically adjusting layouts based on player performance and skill progression to ensure varied and engaging gameplay.",
+      tags: [
+        {
+          name: "Unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "C#",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JSON",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: plg,
       source_code_link: "https://github.com/",
     },
   ];

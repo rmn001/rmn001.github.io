@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -34,8 +32,8 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
+        <a
+          href='#'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
@@ -46,7 +44,7 @@ const Navbar = () => {
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Mehtab Nasir&nbsp;
           </p>
-        </Link>
+        </a>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
@@ -57,9 +55,24 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`} onClick={() => document.getElementById(nav.id)?.scrollIntoView({ behavior: 'smooth' })}>
+                {nav.title}
+              </a>
             </li>
           ))}
+          <li
+            className={`${
+              active === "Resume" ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            <a
+              href="/assets/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -87,9 +100,24 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`} onClick={() => document.getElementById(nav.id)?.scrollIntoView({ behavior: 'smooth' })}>
+                    {nav.title}
+                  </a>
                 </li>
               ))}
+              <li
+                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  active === "Resume" ? "text-white" : "text-secondary"
+                }`}
+              >
+                <a
+                  href="/assets/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>
